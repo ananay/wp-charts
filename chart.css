@@ -1,0 +1,44 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway");
+*{
+	font-family: "Raleway";
+	margin:0;
+	padding: 0;
+}
+body{
+	overflow-x:hidden;
+}
+.shortcode{
+	background: #333;
+	padding:10px;
+	margin:30px;
+	color:#0f0;
+	width: 400px;
+	display: none;
+}
+.ok{
+	padding:10px;
+	background: #2c3e50;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top:30px;
+}
+.top{
+	background: #333;
+	width: 100%;
+	color:#30CDD3;
+	padding:30px;
+}
+input[type='text'], select,option, input[type="email"]{
+	outline: none;
+  	border: none;
+  	border: 2px solid #4d90fe;
+  	border-radius: 4px;
+  	padding: 10px;
+  	font-size: 13pt;
+  	color: #727272;
+  	/* text-transform: uppercase; */
+  	font-weight: 700;
+  	width: 300px;
+  	letter-spacing: 1px;
+}
