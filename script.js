@@ -43,8 +43,19 @@ $(document).ready(function(){
    				values = values + val[i].value+ ',';
 			}
 			values = values.substring(0, values.length-1) + '"';
+			var values2 = 'datasets="';
+			for (i=0; i < val.length; ++i){
+   				values2 = values2 + val[i].value+ ',';
+			}
+			values2 = values2.substring(0, values2.length-1) + '"';
 			var selected = document.getElementById("type");
+			if (selected.options[selected.selectedIndex].value == "line" || selected.options[selected.selectedIndex].value == "bar" || selected.options[selected.selectedIndex].value == "radar"){
+				alert(selected.options[selected.selectedIndex].value);
 			$(".shortcode").html('[wp_charts type="'+ selected.options[selected.selectedIndex].value+'" title="' + document.getElementById("title").value + '" ' + labels + ' ' + values + ']').fadeIn();
+			} else {
+				alert(selected.options[selected.selectedIndex].value);
+			$(".shortcode").html('[wp_charts type="'+ selected.options[selected.selectedIndex].value+'" title="' + document.getElementById("title").value + '" ' + labels + ' ' + values2 + ']').fadeIn();
+			}
 		} else {
 			$("form")[0].reportValidity();
 		}

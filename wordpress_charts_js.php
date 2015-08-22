@@ -44,7 +44,7 @@ include 'wp_charts_widget.php';
 function AddMediaButton($context) {
 
 	$img = plugins_url( 'icon.png' , __FILE__ );
-	$pageurl = plugins_url( 'lol.php' , __FILE__ );
+	$pageurl = plugins_url( 'custom.php' , __FILE__ );
 	
 	$context .= "<a href='{$pageurl}' id='poppe' title='Wordpress Charts'><img src='{$img}' title='{$imgtitle}' /></a>";
 	
