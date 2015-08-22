@@ -25,6 +25,11 @@
 			<input type="text" name="num" class="num" placeholder="Number of Values"/>
 			<br />
 			<br />
+			<span class="doublebar" style="display:none;">
+			<input type="checkbox" name="double" placeholder="Double Bar"/>&nbsp;Double Bar
+			</span>
+			<br />
+			<br />
 			<div class="lol"></div>
 			<br />
 			<div class="shortcode"></div>
